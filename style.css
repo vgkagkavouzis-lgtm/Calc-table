@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    overflow: hidden ;
+    font-family: "Raleway", sans-serif;
+}
+
+table {
+    width: 100vw;
+    width: 240px;
+    table-layout: fixed;
+    border-collapse:collapse
+    
+}
+
+tr {
+    height: 22px;
+}
+
+th {
+    font-size: 11px;
+    border-bottom: 1px solid black;
+}
+
+td, select, input, button {
+    font-size: 6px;
+    width: 30px;
+}
+
+.input {
+    width: 40px;
+} 
+
+.input:focus {
+    font-size: 8px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+
+
+}
+
+.input, select {
+    border: 1px solid #e8e8e8;
+    border-radius: 9px;
+}
+
+select {
+    width: 48px;
+    background-color: #e8e8e8;
+    appearance: none;
+    background-image: url(chevron-down-solid.svg);
+    background-repeat: no-repeat;
+    background-position: right 3px center;
+}   
+
+.select {
+    border-top: 1px solid black
+}
+
+td {
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn-col {
+    width: 0px;
+    border: none
+}
+
+.main-col {
+    width: 8px;
+    
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    width: 1px;
+    padding: 0;
+}
+
+.fa-regular {
+    font-size: 8px;
+}
+
+tfoot tr:last-child {
+    height: 0px;
+}
+
+p {
+    margin: 0;
+}
+
+.outcome  {
+    text-align: center;
+}

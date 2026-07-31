@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="header">
+                <th class="main-col">Height</th>
+                <th class="main-col">Score</th>
+                <th class="main-col">Income</th>
+                <th class="main-col">Age</th>
+                <th class="btn-col"></th>
+                <th class="btn-col"></th>
+        </thead>
+        <tbody>
+            </tr class="inputs">
+                <td><input class="input" type="text" placeholder="height.."></td>
+                <td><input class="input" type="text" placeholder="Score.."></td>
+                <td> <input class="input" type="text" placeholder="Income.."></td>
+                <td><input class="input" type="text" placeholder="Age.."></td>
+                <td><button><i class="fa-regular fa-copy"></i></button></td>
+                <td><button><i class="fa-regular fa-trash-can fa-width-auto" style="color: rgb(252, 41, 8);"></i></button></td>
+            </tr>
+        </tbody>    
+        <tfoot>
+            <tr>
+                <td class="select">
+                    <select name="functions-height" class="functions-height" id="">
+                        <option value="Max">Max</option>
+                        <option value="Min">Min</option>
+                        <option value="Avg">Avg</option>
+                        <option value="Mode">Mode</option>
+                        <option value="Median">Median</option>
+                        <option value="Range">Range</option>
+                        <option value="Variance">Variance</option>
+                        <option value="StdDev">StdDev</option>
+                    </select>
+                </td>
+                <td class="select">
+                    <select name="functions-score" class="functions-score" id="">
+                        <option value="Max">Max</option>
+                        <option value="Min">Min</option>
+                        <option value="Avg">Avg</option>
+                        <option value="Mode">Mode</option>
+                        <option value="Median">Median</option>
+                        <option value="Range">Range</option>
+                        <option value="Variance">Variance</option>
+                        <option value="StdDev">StdDev</option>
+                    </select>
+                </td>
+                <td class="select">
+                    <select name="functions-income" class="functions-income" id="">
+                        <option value="Max">Max</option>
+                        <option value="Min">Min</option>
+                        <option value="Avg">Avg</option>
+                        <option value="Mode">Mode</option>
+                        <option value="Median">Median</option>
+                        <option value="Range">Range</option>
+                        <option value="Variance">Variance</option>
+                        <option value="StdDev">StdDev</option>
+                    </select>
+                </td>
+                <td class="select">
+                    <select name="functions-age" class="functions-age" id="">
+                        <option value="Max">Max</option>
+                        <option value="Min">Min</option>
+                        <option value="Avg">Avg</option>
+                        <option value="Mode">Mode</option>
+                        <option value="Median">Median</option>
+                        <option value="Range">Range</option>
+                        <option value="Variance">Variance</option>
+                        <option value="StdDev">StdDev</option>
+                    </select>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="outcome">
+                <td><p id="height">180</p></td>
+                <td><p id="score">4000</p></td>
+                <td><p id="income">1000</p></td>
+                <td><p id="age">37</p></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>    
+    </table>
+
+
+
+
+<!-- 
+    <div class="container">
+        <div class="container-table">
+            <div class="titles">
+                <h3>Height</h3>
+                <h3>Score</h3>
+                <h3>Income</h3>
+                <h3>Age</h3>
+            </div>
+            <div class="container-values">
+                <div class="values">
+                    <input class="input" type="text" placeholder="height..">
+                    <input class="input" type="text" placeholder="Score..">
+                    <input class="input" type="text" placeholder="Income..">
+                    <input class="input" type="text" placeholder="Age..">
+                </div>    
+                <div class="container-buttons">
+                    <button><i class="fa-regular fa-copy"></i></button>
+                    <button><i class="fa-regular fa-trash-can fa-width-auto" style="color: rgb(252, 41, 8);"></i></button>
+                </div>    
+            </div>
+        </div>
+        <div class="options">
+            <select name="functions-height" class="functions-height" id="">
+                <option value="Max">Max</option>
+                <option value="Min">Min</option>
+                <option value="Avg">Avg</option>
+                <option value="Mode">Mode</option>
+                <option value="Median">Median</option>
+                <option value="Range">Range</option>
+                <option value="Variance">Variance</option>
+                <option value="StdDev">StdDev</option>
+            </select>
+            <select name="functions-score" class="functions-score" id="">
+                <option value="Max">Max</option>
+                <option value="Min">Min</option>
+                <option value="Avg">Avg</option>
+                <option value="Mode">Mode</option>
+                <option value="Median">Median</option>
+                <option value="Range">Range</option>
+                <option value="Variance">Variance</option>
+                <option value="StdDev">StdDev</option>
+            </select>
+            <select name="functions-income" class="functions-income" id="">
+                <option value="Max">Max</option>
+                <option value="Min">Min</option>
+                <option value="Avg">Avg</option>
+                <option value="Mode">Mode</option>
+                <option value="Median">Median</option>
+                <option value="Range">Range</option>
+                <option value="Variance">Variance</option>
+                <option value="StdDev">StdDev</option>
+            </select>
+            <select name="functions-age" class="functions-age" id="">
+                <option value="Max">Max</option>
+                <option value="Min">Min</option>
+                <option value="Avg">Avg</option>
+                <option value="Mode">Mode</option>
+                <option value="Median">Median</option>
+                <option value="Range">Range</option>
+                <option value="Variance">Variance</option>
+                <option value="StdDev">StdDev</option>
+            </select>
+        </div>
+        <div class="final-values">
+            <p id="height">180</p>
+            <p id="score">4000</p>
+            <p id="income">1000</p>
+            <p id="age">37</p>
+        </div>
+    </div>
+     -->
+
+    <script src="script.js"></script>
+</body>
+</html>
